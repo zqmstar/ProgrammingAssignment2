@@ -26,3 +26,18 @@ cacheSolve<-function(x,...){
     x$setmatrix(m)
     m
 }
+>cacheSolve(matrix)
+     [,1] [,2]
+[1,]  -2   1.5
+[2,]   1  -0.5
+>cacheSolve(matrix)
+getting cached matrix
+     [,1] [,2]
+[1,]  -2   1.5
+[2,]   1  -0.5
+>y=cacheSolve(matrix)%*%x
+getting cached matrix
+>y
+     [,1] [,2]
+[1,]   1    0
+[2,]   0    1
